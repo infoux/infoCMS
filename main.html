@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>infoCMS</title>
+        <link href="css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#main-menu>ul>li").on("mouseover", function(){
+                    $(this).addClass("active");
+                });
+                $("#main-menu>ul>li").on("mouseleave", function(){
+                    $(this).removeClass("active");
+                });
+            });
+        </script>
+
+    </head>
+
+    <body class="cmsMain">
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
+                <h1><a href="">오픈제주 <small>http://www.openjeju.net</small></a></h1>
+                <p class="welcome"><strong>관리자</strong>님 환영합니다. <u>로그인 시간 - 2018.09.04 20:21:00</u></p>
+                <button class="logout"><i class='bx bx-log-out'></i>LOGOUT</button>
+
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <aside>
+            <h2>infoCMS</h2>
+            <!-- S:main_menu -->
+                <nav id="main-menu">
+
+                        <ul>
+                            <li>
+                                <h3><a href=""><i class='bx bx-dashboard'></i>대쉬보드</a></h3>
+                                <ul>
+                                    <li><a href="">대쉬보드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-user-circle'></i>사용자관리</a></h3>
+                                <ul>
+                                    <li><a href="">그룹관리</a></li>
+                                    <li><a href="">역할관리</a></li>
+                                    <li><a href="">사용자목록</a></li>
+                                    <li><a href="">사용자등록</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-sitemap'></i>사이트관리</a></h3>
+                                <ul>
+                                    <li><a href="">사이트관리</a></li>
+                                    <li><a href="">사이트등록</a></li>
+                                    <li><a href="">로그관리</a></li>
+                                    <li><a href="">긴급알림</a></li>
+                                    <li><a href="">설문관리</a></li>
+                                    <li><a href="">팝업관리</a></li>
+                                    <li><a href="">배너관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-code-curly'></i>코드관리</a></h3>
+                                <ul>
+                                    <li><a href="">코드그룹관리</a></li>
+                                    <li><a href="">코드관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-menu'></i>메뉴관리</a></h3>
+                                <ul>
+                                    <li><a href="">메뉴그룹관리</a></li>
+                                    <li><a href="">사용자 메뉴관리</a></li>
+                                    <li><a href="">관리자 메뉴관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-chalkboard'></i>게시판관리</a></h3>
+                                <ul>
+                                    <li><a href="">게시판관리</a></li>
+                                    <li><a href="">게시물관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-code'></i>페이지관리</a></h3>
+                                <ul>
+                                    <li><a href="">페이지</a></li>
+                                    <li><a href="">LAYOUT</a></li>
+                                    <li><a href="">CSS</a></li>
+                                    <li><a href="">JS</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-categories'></i>카테고리관리</a></h3>
+                                <ul>
+                                    <li><a href="">카테고리그룹관리</a></li>
+                                    <li><a href="">카테고리그룹등록</a></li>
+                                    <li><a href="">카테고리관리</a></li>
+                                    <li><a href="">카테고리등록</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-archive'></i>컨텐츠관리</a></h3>
+                                <ul>
+                                    <li><a href="">컨텐츠관리</a></li>
+                                    <li><a href="">컨텐츠등록</a></li>
+                                    <li><a href="">서브 컨텐츠그룹관리</a></li>
+                                    <li><a href="">축제/행사 관리</a></li>
+                                    <li><a href="">오름관리화면</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-cog'></i>설정</a></h3>
+                                <ul>
+                                    <li><a href="">접근설정</a></li>
+                                    <li><a href="">SNS설정</a></li>
+                                    <li><a href="">캐쉬설정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-station'></i>비콘관리</a></h3>
+                                <ul>
+                                    <li><a href="">비콘정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-collection'></i>싸이니지관리</a></h3>
+                                <ul>
+                                    <li><a href="">싸이니지관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><a href=""><i class='bx bx-wrench'></i>장비관리</a></h3>
+                                <ul>
+                                    <li><a href="">장비타입</a></li>
+                                    <li><a href="">장비정보</a></li>
+                                    <li><a href="">장비관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                </nav>
+            <!-- E:main_menu -->
+
+        </aside>
+
+        <div id="content">
+
+            <section class="tabs">
+                <input type="radio" name="tabs" id="tabs1" checked><label for="tabs1">대쉬보드<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs2"><label for="tabs2">두번째탭<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs3"><label for="tabs3">세번째탭 입니다 입니다<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs4"><label for="tabs4">네번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs5"><label for="tabs5">다섯번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs6"><label for="tabs6">여섯번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs7"><label for="tabs7">일곱번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs8"><label for="tabs8">여덟번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs9"><label for="tabs9">아홉번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs10"><label for="tabs10">열번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs11"><label for="tabs11">열한번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs12"><label for="tabs12">열두번째<button>닫기<i class='bx bx-x'></i></button></label>
+                <input type="radio" name="tabs" id="tabs13"><label for="tabs13">열세번째<button>닫기<i class='bx bx-x'></i></button></label>
+
+                <button class="prev">이전<i class='bx bx-chevron-left'></i></button>
+                <button class="next on">다음<i class='bx bx-chevron-right'></i></button>
+
+
+            </section>
+
+            <section class="view">
+
+                <h2 class="stitle"><i class='bx bx-dashboard'></i>대쉬보드</h2>
+
+
+
+
+            </section>
+
+        </div>
+        <!-- E:mainContent -->
+        <!-- S:footer -->
+        <footer id="footer">
+            © INFOMIND
+        </footer>
+        <!-- E:footer -->
+    </body>
+
+</html>

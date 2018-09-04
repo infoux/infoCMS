@@ -9,15 +9,22 @@
         <link href="css/style.css" rel="stylesheet">
         <!-- javaScript -->
         <script src="js/jquery-1.11.3.min.js"></script>
-
+        <script src="js/perfect-scrollbar.jquery.js"></script>
+        
         <script>
             $(document).ready(function(){
-                $("#main-menu>ul>li").on("mouseover", function(){
+                $("#main-menu>ul>li").on("click", function(){
+                    $("#main-menu>ul>li").removeClass("active");
                     $(this).addClass("active");
                 });
-                $("#main-menu>ul>li").on("mouseleave", function(){
-                    $(this).removeClass("active");
-                });
+
+                
+                try {
+                    $("aside").perfectScrollbar({
+                        suppressScrollX:true
+                    });
+                } catch(e) {}
+
             });
         </script>
 
@@ -47,13 +54,13 @@
 
                         <ul>
                             <li class="on">
-                                <h3><a href=""><i class='bx bx-dashboard'></i>대시보드</a></h3>
+                                <h3><a href="#"><i class='bx bx-dashboard'></i>대시보드</a></h3>
                                 <ul>
                                     <li><a href="">대시보드</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-user-circle'></i>사용자관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-user-circle'></i>사용자관리</a></h3>
                                 <ul>
                                     <li><a href="">그룹관리</a></li>
                                     <li><a href="">역할관리</a></li>
@@ -62,7 +69,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-sitemap'></i>사이트관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-sitemap'></i>사이트관리</a></h3>
                                 <ul>
                                     <li><a href="">사이트관리</a></li>
                                     <li><a href="">사이트등록</a></li>
@@ -74,14 +81,14 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-code-curly'></i>코드관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-code-curly'></i>코드관리</a></h3>
                                 <ul>
                                     <li><a href="">코드그룹관리</a></li>
                                     <li><a href="">코드관리</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-menu'></i>메뉴관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-menu'></i>메뉴관리</a></h3>
                                 <ul>
                                     <li><a href="">메뉴그룹관리</a></li>
                                     <li><a href="">사용자 메뉴관리</a></li>
@@ -89,14 +96,14 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-chalkboard'></i>게시판관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-chalkboard'></i>게시판관리</a></h3>
                                 <ul>
                                     <li><a href="">게시판관리</a></li>
                                     <li><a href="">게시물관리</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-code'></i>페이지관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-code'></i>페이지관리</a></h3>
                                 <ul>
                                     <li><a href="">페이지</a></li>
                                     <li><a href="">LAYOUT</a></li>
@@ -105,7 +112,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-categories'></i>카테고리관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-categories'></i>카테고리관리</a></h3>
                                 <ul>
                                     <li><a href="">카테고리그룹관리</a></li>
                                     <li><a href="">카테고리그룹등록</a></li>
@@ -114,7 +121,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-archive'></i>컨텐츠관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-archive'></i>컨텐츠관리</a></h3>
                                 <ul>
                                     <li><a href="">컨텐츠관리</a></li>
                                     <li><a href="">컨텐츠등록</a></li>
@@ -124,7 +131,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-cog'></i>설정</a></h3>
+                                <h3><a href="#"><i class='bx bx-cog'></i>설정</a></h3>
                                 <ul>
                                     <li><a href="">접근설정</a></li>
                                     <li><a href="">SNS설정</a></li>
@@ -132,19 +139,19 @@
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-station'></i>비콘관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-station'></i>비콘관리</a></h3>
                                 <ul>
                                     <li><a href="">비콘정보</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-collection'></i>싸이니지관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-collection'></i>싸이니지관리</a></h3>
                                 <ul>
                                     <li><a href="">싸이니지관리</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h3><a href=""><i class='bx bx-wrench'></i>장비관리</a></h3>
+                                <h3><a href="#"><i class='bx bx-wrench'></i>장비관리</a></h3>
                                 <ul>
                                     <li><a href="">장비타입</a></li>
                                     <li><a href="">장비정보</a></li>

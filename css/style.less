@@ -2,6 +2,8 @@
 @import "normalize.css";
 @import "rem.less";
 @import "boxicons.css";
+@import "perfect-scrollbar.css";
+
 
 
 
@@ -577,6 +579,7 @@ body {
             background: #141414;
             color: #fff;
 
+
             &:after {
                 content:"";
                 .block;
@@ -631,7 +634,7 @@ body {
                             .relative;
                             color: #aaa;
                             font-size: 17px;
-                            padding:20px 10px;
+                            padding:14px 10px;
                             .normal;
                             .ani();
 
@@ -668,15 +671,8 @@ body {
                     }
 
                     ul {
-                        .absolute;
-                        z-index:999;
-                        width:0;
-                        top:0;
-                        left:179px;
-                        min-height:60px;
+                        max-height:0;
                         .hidden;
-                        border-radius:0 10px 10px 10px;
-                        padding:0;
                         background:#000;
                         .ani();
 
@@ -685,14 +681,13 @@ body {
                             a {
                                 .block;
                                 white-space:nowrap;
-                                padding:10px 20px;
+                                padding:10px 20px 10px 24px;
                                 font-size:16px;
                                 color:#ccc;
                                 .ani();
 
                                 &:hover {
                                     color:#fff;
-                                    padding:10px 20px 10px 24px;
                                 }
                             }
                         }
@@ -703,7 +698,6 @@ body {
                             a {
                                 background:#000;
                                 color:#fff;
-                                padding:20px 10px 20px 14px;
                                 .ani();
                                 
                                 &::before {
@@ -716,25 +710,25 @@ body {
 
 
                                 i {
-                                    color:@theme-color;
+                                    color:#dd792c;
                                 }
                             }
                         }
 
                         ul {
-                            width:180px;
+                            max-height:1000px;
+                            padding:10px;
                             .ani();
-                            padding:10px 0;
                             
                         }
                     }
 
-                    &.on {
+                    &.on,
+                    &:hover {
                         h3 {
                             a {
                                 background:#000;
                                 color:#fff;
-                                padding:20px 10px 20px 14px;
                                 .ani();
                                 
                                 &::before {

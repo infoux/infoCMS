@@ -557,6 +557,7 @@ body {
                 padding: 0 20px;
                 font-size: 17px;
                 background: @theme-color;
+                border-radius:10px;
                 color: #fff;
 
                 i {
@@ -590,10 +591,27 @@ body {
 
             h2 {
                 .zero;
+                .relative;
                 height:90px;
                 .mapazero;
-                background:url("../images/logo.svg") no-repeat @theme-color center / 80% auto;
-                border-bottom:6px solid rgba(0,0,0,0.2);
+                background:@theme-color;
+
+                &:after {
+                    content:"";
+                    .block;
+                    .absolute;
+                    .full-position;
+                    background: rgba(0,0,0,0.4);
+                }
+                &:before {
+                    content:"";
+                    .block;
+                    .absolute;
+                    z-index:10;
+                    .full-position;
+                    background:url("../images/logo.svg") no-repeat center / 80% auto;
+                }
+    
             }
 
             ul {

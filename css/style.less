@@ -1,7 +1,7 @@
 // out: ./style.css, compress: true, sourceMap: false
 @import "normalize.css";
 @import "rem.less";
-@import "https://cdn.jsdelivr.net/npm/boxicons@1.7.1/css/boxicons.min.css";
+@import "boxicons.css";
 
 
 
@@ -728,6 +728,32 @@ body {
                             
                         }
                     }
+
+                    &.on {
+                        h3 {
+                            a {
+                                background:#000;
+                                color:#fff;
+                                padding:20px 10px 20px 14px;
+                                .ani();
+                                
+                                &::before {
+                                    height:0;
+                                }
+                                
+                                &::after {
+                                    height:0;
+                                }
+
+
+                                i {
+                                    color:@theme-color;
+                                }
+                            }
+                        }
+
+                    }
+
                 }
             }
         }

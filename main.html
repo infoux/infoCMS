@@ -18,6 +18,11 @@
                     $(this).addClass("active");
                 });
 
+                $("#main-menu>ul>li>ul>li").on("click", function(){
+                    $("#main-menu>ul>li>ul>li").removeClass("active");
+                    $(this).addClass("active");
+                });
+
                 
                 try {
                     $("aside").perfectScrollbar({
@@ -53,7 +58,7 @@
                 <nav id="main-menu">
 
                         <ul>
-                            <li class="on">
+                            <li class="active">
                                 <h3><a href="#"><i class='bx bx-dashboard'></i>대시보드</a></h3>
                                 <ul>
                                     <li><a href="">대시보드</a></li>
@@ -63,8 +68,23 @@
                                 <h3><a href="#"><i class='bx bx-user-circle'></i>사용자관리</a></h3>
                                 <ul>
                                     <li><a href="">그룹관리</a></li>
-                                    <li><a href="">역할관리</a></li>
-                                    <li><a href="">사용자목록</a></li>
+                                    <li>
+                                        <a href="#">역할관리</a>
+                                        <ul>
+                                            <li><a href="">3DEPTH</a></li>
+                                            <li><a href="">3DEPTH</a></li>
+                                            <li><a href="">3DEPTH</a></li>
+                                        </ul>
+                                    
+                                    </li>
+                                    <li>
+                                        <a href="#">사용자목록</a>
+                                        <ul>
+                                            <li><a href="">3DEPTH</a></li>
+                                            <li><a href="">3DEPTH</a></li>
+                                            <li><a href="">3DEPTH</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="">사용자등록</a></li>
                                 </ul>
                             </li>

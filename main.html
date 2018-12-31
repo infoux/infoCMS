@@ -16,10 +16,10 @@
                 window.addEventListener("scroll", callbackFunc);
                 function callbackFunc() {
                     var y = window.pageYOffset;
-                    if (y > 53) {
-                        $("#content").addClass("scroll");
+                    if (y > 0) {
+                        $("body").addClass("scroll");
                     } else {
-                        $("#content").removeClass("scroll");
+                        $("body").removeClass("scroll");
                     }
                 }
             }

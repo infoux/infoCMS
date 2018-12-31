@@ -920,35 +920,68 @@ body {
             }
 
 
-
-
-            &.scroll {
-                
-
-                section.tabs {
-                    .fixed;
-                    padding-top:10px;
-                    top:0;
-                    height:53px;
-                    left:180px;
-                    right:0;
-                    background:#252526;
-
-                    &>button {
-
-                        top:10px;
-                    }
-                }
-
-                section.view {
-                    padding-top:76px;
-                }
-            }
         }
 
         #footer {
             color: #999;
             padding: 20px;
+        }
+
+
+
+
+
+        
+
+
+        &.scroll {
+                
+            header {
+                .fixed;
+                top:0;
+                left:180px;
+                right:0;
+                z-index:1000;
+                line-height:42px;
+                background:#252526;
+                .ani();
+
+                h1 {
+    
+                    a {
+                        font-size: 18px;
+    
+                        small {
+                            font-size: 14px;
+                            .bottom;
+                        }
+                    }
+                }
+                
+                button.logout {
+                    height: 32px;
+                    font-size: 14px;
+                    top:6px;
+                    .ani();
+
+
+                }
+            }
+            div#content {
+                section.tabs {
+                    .fixed;
+                    z-index:1001;
+                    top:45px;
+                    left:180px;
+                    right:0;
+                    background:#252526;
+
+                }
+
+                section.view {
+                    padding-top:118px;
+                }
+            }
         }
     }
 

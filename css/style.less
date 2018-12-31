@@ -794,6 +794,7 @@ body {
         }
 
         div#content {
+            .relative;
 
             section.tabs {
                 .zero;
@@ -814,8 +815,6 @@ body {
                     width:160px;
                     .gradienth(rgba(37,37,38,0), rgba(37,37,38,1), rgba(37,37,38,1))
                 }
-
-
 
                 input {
                     .none;
@@ -917,6 +916,32 @@ body {
                         color:@theme-color;
                         .top;
                     }
+                }
+            }
+
+
+
+
+            &.scroll {
+                
+
+                section.tabs {
+                    .fixed;
+                    padding-top:10px;
+                    top:0;
+                    height:53px;
+                    left:180px;
+                    right:0;
+                    background:#252526;
+
+                    &>button {
+
+                        top:10px;
+                    }
+                }
+
+                section.view {
+                    padding-top:76px;
                 }
             }
         }

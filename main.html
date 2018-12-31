@@ -12,6 +12,17 @@
         <script src="js/perfect-scrollbar.jquery.js"></script>
         
         <script>
+            function onScroll() {
+                window.addEventListener("scroll", callbackFunc);
+                function callbackFunc() {
+                    var y = window.pageYOffset;
+                    if (y > 53) {
+                        $("#content").addClass("scroll");
+                    } else {
+                        $("#content").removeClass("scroll");
+                    }
+                }
+            }
             $(document).ready(function(){
                 $("#main-menu>ul>li").on("click", function(){
                     $("#main-menu>ul>li").removeClass("active");
@@ -29,6 +40,8 @@
                         suppressScrollX:true
                     });
                 } catch(e) {}
+
+                onScroll();
 
             });
         </script>
@@ -211,6 +224,17 @@
             <section class="view">
 
                 <h2 class="stitle"><i class='bx bx-dashboard'></i>대시보드</h2>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 

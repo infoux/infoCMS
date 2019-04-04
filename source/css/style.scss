@@ -1,0 +1,658 @@
+
+@import "normalize", "rem", "font", "color";
+
+@import "bootstrap-grid";
+@import "mixins/mixin";
+/* basic */
+$min-width: 320px;
+$img-url: "../images";
+$screen-size-pc: 1200px;
+$main-color: #2F6AB9;
+
+.pagenation {
+    display: inline-block;
+    text-align: center;
+    @include zero;
+
+    margin: rem(20px 0 30px);
+    width: 100%;
+
+    a {
+        background: white;
+    }
+
+    a,
+    strong {
+        display: inline-block;
+        vertical-align: top;
+        font: rem(10px)/rem(22px); // font-size/line-height
+        color: #555;
+        border: 1px solid #e2e2e2;
+        width: rem(22px);
+        height: rem(22px);
+        margin: rem(0 1px);
+
+        @media only screen and (min-width : $screen-size-pc) {
+            font: 14px/32px; // font-size/line-height
+            width: 32px;
+            height: 32px;
+            margin: 0 2px;
+        }
+
+        &.jump,
+        &.move {
+            @include zero;
+
+            i {
+                font-size: rem(10px);
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    font-size: 14px;
+                }
+
+            }
+        }
+
+        &.jump {
+            width: auto;
+            background: #efefef;
+            padding: rem(0 10px);
+
+            i {
+                &::before {
+                    @include pmz(0, 0);
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .active,
+    strong {
+        background: $color-main;
+        color: white;
+        font-weight: normal;
+        border-color: transparent;
+    }
+}
+
+* {
+    @include box-sizing;
+    @include ani();
+    outline: none;
+}
+
+input,
+select,
+textarea {
+    @include border-radius(0);
+    /*
+    @media all and (max-width: 1199px) {
+        appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+*/
+}
+
+a {
+    text-decoration: none;
+    color: $text-link-color;
+}
+/*font*/
+html {
+    min-width: $min-width;
+    max-width: 100%;
+    font-size: 14px;
+    min-height: 100%;
+}
+
+@media (max-width:360px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (min-width:361px) and (max-width:480px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media (min-width:481px) {
+    html {
+        font-size: 22px;
+    }
+}
+@media (min-width:1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
+    color: $text-color;
+
+}
+
+.sr-only {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    position: static;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+
+/* style */
+
+body {
+
+    .container {
+        @include container(100%);
+        text-align: left;
+        vertical-align: top;
+        padding: rem(0 10px);
+
+        @media only screen and (min-width : $screen-size-pc) {
+            @include container($screen-size-pc);
+            padding: 0;
+        }
+    }
+
+    /* main */
+    &.cmsMain {
+
+        $aside-width: 240px;
+        $aside-width-min: 80px;
+        font-size: 0;
+
+        &:before {
+            content: "";
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 900;
+            width: 0;
+            @include ani();
+
+            @media only screen and (min-width : $screen-size-pc) {
+                display: block;
+                z-index: -1;
+                width: $aside-width;
+                background: #222;
+            }
+
+        }
+
+        header {
+            position: absolute;
+            overflow: hidden;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: rem(50px);
+            line-height: rem(50px);
+            padding:rem(0 0 0 60px);
+            background: $main-color;
+
+            @media only screen and (min-width : $screen-size-pc) {
+                left: $aside-width;
+                background: #eee;
+                height: 60px;
+                line-height: 60px;
+                vertical-align: top;
+                padding:0;
+            }
+
+            button.menu {
+                position: absolute;
+                top:0;
+                left:0;
+                border: none;
+                background: $main-color - 20%;
+                color: #fff;
+                height: rem(50px);
+                width: rem(50px);
+                vertical-align: top;
+                font-size: 0;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    position:static;
+                    width: 60px;
+                    height: 60px;
+                    background: $main-color;
+                    line-height: 60px;
+                    border-radius: 0 30px 30px 0;
+                    @include drop-shadow (1px, 0, 0, 1px, $alpha: 0.3);
+                }
+
+                i {
+                    font-size: 30px;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+
+            h1 {
+                display: inline-block;
+                @include pmz(0 0 0 20px,0);
+                font-size: rem(18px);
+
+                @media only screen and (min-width : $screen-size-pc) {
+
+                    font-size: 18px;
+                    @include pmz(0 20px,0);
+                }
+
+                a {
+                    color: #fff;
+
+                    @media only screen and (min-width : $screen-size-pc) {
+                        color: #222;
+                    }
+
+                }
+            }
+
+            p.welcome {
+                display: none;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    display: inline-block;
+                    font-size: 14px;
+                    @include pmz(0 20px, 0);
+                }
+
+                u {
+                    text-decoration:none;
+                    @include opacity(0.6);
+                }
+
+            }
+
+            button.logout {
+                position: absolute;
+                right: 0;
+                border: none;
+                background: none;
+                font-size: rem(14px);
+                @include pmz(0 20px, 0);
+                color: #fff;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    background: rgba(0,0,0,0.1);
+                    color: #222;
+                    font-size:16px;
+                }
+
+                i {
+                    position:relative;
+                    top:2px;
+                    margin-right:6px;
+
+                    @media only screen and (min-width : $screen-size-pc) {
+                        top:1px;
+                    }
+                }
+
+            }
+        }
+
+        aside {
+            position: relative;
+            z-index: 10;
+
+            display: none;
+            width: $aside-width;
+
+            @media only screen and (min-width : $screen-size-pc) {
+                display: inline-block;
+            }
+
+            h2 {
+                height: rem(50px);
+                line-height: rem(50px);
+                font-size: rem(18px);
+                @include pmz(0,0 0 20px);
+                text-align: center;
+                color: #fff;
+                background: $main-color;
+
+                @media only screen and (min-width : $screen-size-pc) {
+
+                    font-size: 22px;
+                    height: 60px;
+                    line-height: 60px;
+                }
+            }
+
+            nav#main-menu {
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    display: inline-block;
+                    width: 100%;
+                }
+
+                & > ul {
+                    list-style: none;
+
+                    @include pmz(0,0);
+
+                    & > li {
+                        h3 {
+
+                            @include pmz(0,0);
+
+                            a {
+                                display: block;
+                                font-weight: 400;
+                                font-size: rem(14px);
+                                color: rgba(#fff, 0.7);
+                                @include pmz(#{rem(10px 16px)},0);
+                                word-break: keep-all;
+                                white-space: nowrap;
+
+                                @media only screen and (min-width : $screen-size-pc) {
+                                    font-size: 18px;
+                                    @include pmz(10px 20px,0);
+                                    color: rgba(#fff, 0.7);
+                                }
+
+                                i {
+                                    position: relative;
+                                    font-size: 22px;
+                                    top: 4px;
+                                    margin: 0 8px 0 0;
+
+                                    @media only screen and (min-width : $screen-size-pc) {
+                                        color: #aaa;
+                                    }
+                                }
+
+                                span {
+
+                                    word-break: keep-all;
+                                    white-space: nowrap;
+                                }
+
+                                &:hover {
+                                    background: $main-color;
+                                    color: #fff;
+
+                                    i {
+                                        color: rgba(#fff, 0.6);
+                                    }
+                                }
+
+                            }
+                        }
+                        ul {
+                            max-height: 0;
+                            list-style:none;
+                            padding:0;
+                            overflow: hidden;
+
+                            @include ani(0.5s);
+
+                            li {
+                                a {
+                                    display:block;
+                                    font-size:rem(12px);
+                                    color:#fff - 50%;
+                                    @include pmz(#{rem(8px 16px 8px 36px)},0);
+
+                                    @media only screen and (min-width : $screen-size-pc) {
+                                        font-size:14px;
+                                        padding:10px 20px 10px 40px;
+                                    }
+
+                                    i {
+                                        color:#555;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.active {
+                            h3 {
+                                a {
+                                    background:rgba(#000, 0.2);
+                                    color:#fff;
+                                }
+                            }
+                            ul {
+                                max-height:1000px;
+                                @include ani(1s);
+
+                                li {
+                                    a {
+                                        &:hover {
+                                            
+                                            background:rgba(#000, 0.4);
+                                        }
+
+                                        i {
+                                            margin-right:rem(4px);
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        div#content {
+            margin-top: rem(50px);
+            font-size:rem(11px);
+            padding:rem(10px);
+
+            @media only screen and (min-width : $screen-size-pc) {
+                margin-top: 60px;
+                display: inline-block;
+                width: calc(100% - #{$aside-width});
+                vertical-align: top;
+                font-size: 14px;
+                padding:30px;
+            }
+
+            h2.stitle {
+                @include pmz(0,0);
+                font-size:rem(20px);
+                color:#555;
+                font-weight:800;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    font-size:32px;
+                }
+    
+
+                i {
+                    position:relative;
+                    top:rem(2px);
+                    margin-right:rem(6px);
+                    color:#bbb;
+                }
+            }
+
+            div.contentsArea {
+                min-height:rem(200px);
+
+                .shadowBox {
+                    
+                    @include pmz(rem(20px), rem(20px 0));
+                    @include drop-shadow(0, 5px, 10px, 5px, 0.05);
+
+                    &:hover {
+                        
+                        @include drop-shadow(0, 5px, 10px, 5px, 0.1);
+                    }
+
+                }
+            }
+
+
+
+
+
+            footer#footer {
+                text-align: center;
+    
+                @media only screen and (min-width : $screen-size-pc) {
+
+                    text-align: left;
+                    font-size: 14px;
+                }
+    
+            }
+
+        }
+        
+
+
+        &.menuToggle {
+
+            &::before {
+                display: block;
+                background: #333;
+                width: calc(100vw - 60px);
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    width: $aside-width-min;
+                }
+            }
+
+            aside {
+                z-index: 990;
+                display: inline-block;
+                overflow: hidden;
+                width: calc(100vw - 60px);
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    width: $aside-width-min;
+                }
+
+                h2 {
+                    background: $main-color - 20%;
+                }
+
+                nav#main-menu {
+                    & > ul {
+                        & > li {
+                            h3 {
+                                a {
+
+                                    i {
+                                        color: #fff;
+
+                                        @media only screen and (min-width : $screen-size-pc) {
+
+                                            margin: 0 0 0 8px;
+                                        }
+                                    }
+
+                                    span {
+
+                                        @media only screen and (min-width : $screen-size-pc) {
+                                            @include opacity(0);
+                                        }
+
+                                    }
+
+                                    &:hover {
+                                        background: $main-color - 20%;
+                                    }
+                                }
+                            }
+
+                            ul {
+
+                                @media only screen and (min-width : $screen-size-pc) {
+                                    height:0;
+                                    padding:0;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            header {
+                left: 0;
+                background: $main-color;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    left:$aside-width-min;
+                }
+
+                button.menu {
+                    background: $main-color;
+                    z-index:10;
+                    left:auto;
+                    right: 0;
+                    width: 60px;
+
+                    @media only screen and (min-width : $screen-size-pc) {
+                        position:static;
+                        background: $main-color - 20%;
+                    }
+
+                    i {
+                        font-size: 30px;
+                        position: relative;
+                        top: 10px;
+                    }
+                }
+
+                h1 {
+                    a {
+                        color: #fff;
+
+                    }
+                }
+
+                p.welcome {
+                    color:#fff
+                }
+
+                button.logout {
+
+                    @media only screen and (min-width : $screen-size-pc) {
+                        color:#fff;
+                    }
+                }
+            }
+
+            div#content {
+                @media only screen and (min-width : $screen-size-pc) {
+                    width: calc(100% - #{$aside-width-min});
+                }
+            }
+
+            footer#footer {
+                }
+        }
+
+    }
+}

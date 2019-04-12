@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>infoCMS</title>
+        <link rel="stylesheet" type="text/css" href="source/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="source/css/xeicon.css"/>
+
+        <!-- javaScript -->
+
+        <script src="source/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="source/js/popper.min.js"></script>
+        <script src="source/js/bootstrap.min.js"></script>
+
+        <script src="source/js/common.js"></script>
+
+    </head>
+
+    <body class="cmsMain">
+        <!-- S:skip_navi -->
+        <div class="skip_navi">
+            <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+            <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+        </div>
+        <!-- E:skip_navi -->
+        <!-- S:header -->
+        <header id="header">
+            <button class="menu">
+                <i class='bar'></i>
+                <i class='bar'></i>
+                <i class='bar'></i>
+                메뉴토글</button>
+
+            <h1>
+                <a href="">제주은행</a>
+            </h1>
+
+            <p class="welcome">
+                <strong>관리자</strong>님 환영합니다.
+                <u>로그인 세션 유지시간 - 9분 20초 남음</u>
+            </p>
+            <button class="logout">
+                <i class='xi xi-log-out'></i>LOGOUT</button>
+
+        </header>
+        <!-- E:header -->
+        <!-- S:mainContent -->
+        <aside>
+            <h2>inCMS</h2>
+
+            <div class="profile mt-5 mb-3">
+                <p class="photo">
+                    <img src="source/images/user.gif">
+                </p>
+                <p class="userName">관리자</p>
+            </div>
+            <!-- S:main_menu -->
+            <nav id="main-menu">
+
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-dashboard-o'></i>
+                                <span>Dashboard</span></a>
+                        </h3>
+
+                    </li>
+                    <li >
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-sitemap'></i>
+                                <span>App</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>Widgets</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>Weather</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-comment-o'></i>
+                                <span>UI Elements</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>게시판관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>게시물관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-document'></i>
+                                <span>Forms</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>페이지</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>LAYOUT</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>CSS</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>JS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-library-books-o'></i>
+                                <span>Tables</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리그룹관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리그룹등록</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- E:main_menu -->
+
+        </aside>
+
+        <div id="content">
+
+            <section class="view">
+
+                <h2 class="sTitle">
+                    <i class='xi xi-dashboard-o'></i>Forms</h2>
+
+                <nav class="navigation" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item icon">
+                            <a href="#">
+                                <i class='xi xi-home-o'></i>Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">APP</li>
+                    </ol>
+                </nav>
+                <div class="contentsArea">
+                    <div class="container">
+
+                        <!-- 검색폼 -->
+                        <div class="row">
+                            <div class="col-xl-12" area-label="search form">
+                                <h3 class="sr-only">검색폼</h3>
+                                <div class="search">
+
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="col-xl-2">
+                                                <label class="sr-only" for="inlineFormCustomSelect">Preference</label>
+                                                <select class="custom-select mr-xl-2 mb-2 mb-xl-0" id="inlineFormCustomSelect">
+                                                    <option selected="selected">Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+
+                                            <label for="inputWord" class="sr-only">검색어</label>
+                                            <div class="col-xl-3">
+                                                <input type="text" class="form-control" id="inputWord" placeholder="검색어를 입력하세요">
+                                            </div>
+
+                                            <div class="col-xl-6">
+
+                                                <div class="form-check form-check-inline">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="inlineCheckbox1"
+                                                        value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">선택1</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="inlineCheckbox2"
+                                                        value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">선택2</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="checkbox"
+                                                        id="inlineCheckbox3"
+                                                        value="option3"
+                                                        disabled="disabled">
+                                                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-xl-1">
+                                                <button type="submit" class="btn btn-primary btn-block btn-xl-inline">검색</button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 검색폼-->
+
+                        <!-- 일반컨텐츠 영역 -->
+                        <div class="row">
+                            <div class="cbox col-xl-12" area-label="content area">
+                                <div class="inside">
+                                    <h3 class="bTitle">정보 입력 폼</h3>
+                                    <!-- 내용 -->
+
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-4">
+
+                                                <label for="inputId">아이디</label>
+
+                                                <div class="input-group">
+                                                    <input
+                                                        id="inputId"
+                                                        type="text"
+                                                        class="form-control"
+                                                        placeholder="아이디를 입력하세요"
+                                                        aria-label="아이디를 입력하세요"
+                                                        aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-secondary" type="button" id="button-addon2">중복확인</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-3">
+                                                <label for="inputPassword1">비밀번호</label>
+                                                <input
+                                                    type="password"
+                                                    class="form-control"
+                                                    id="inputPassword1"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <label for="inputPassword2">비밀번호 다시 입력</label>
+                                                <input
+                                                    type="password"
+                                                    class="form-control"
+                                                    id="inputPassword2"
+                                                    placeholder="Password">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                            </div>
+
+                                        </div>
+                                        <hr>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-4">
+
+                                                <label for="inputPost">우편번호</label>
+
+                                                <div class="input-group">
+                                                    <input
+                                                        id="inputPost"
+                                                        type="text"
+                                                        class="form-control"
+                                                        placeholder="우편번호"
+                                                        aria-label="우편번호를 입력하세요"
+                                                        aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-secondary" type="button" id="button-addon2">우편번호 검색</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputAddress">주소</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputAddress"
+                                                    placeholder="1234 Main St">
+                                            </div>
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputAddress2">나머지 주소</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputAddress2"
+                                                    placeholder="Apartment, studio, or floor">
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputAddress">파일 업로드 #1</label>
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input
+                                                            type="file"
+                                                            class="custom-file-input"
+                                                            id="inputGroupFile01"
+                                                            aria-describedby="inputGroupFileAddon01">
+                                                        <label class="custom-file-label" for="inputGroupFile01">파일을 선택하세요</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6">
+                                                <label for="inputAddress">파일 업로드 #2</label>
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input
+                                                            type="file"
+                                                            class="custom-file-input"
+                                                            id="inputGroupFile01"
+                                                            aria-describedby="inputGroupFileAddon01">
+                                                        <label class="custom-file-label" for="inputGroupFile01">파일을 선택하세요</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-block btn-xl-inline">Sign in</button>
+                                    </form>
+
+                                    <!--// 내용 -->
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 일반컨텐츠 영역 -->
+
+                        <!-- 페이징 -->
+                        <div class="row">
+                            <nav class="mCenter" aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            처음
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <i class='xi xi-angle-left'></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <i class='xi xi-angle-right'></i>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            맨끝
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                        </div>
+                        <!-- 페이징 -->
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- S:footer -->
+            <footer id="footer">
+                © INFOMIND
+            </footer>
+            <!-- E:footer -->
+        </div>
+        <!-- E:mainContent -->
+    </body>
+
+</html>

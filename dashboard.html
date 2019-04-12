@@ -10,11 +10,14 @@
         <link rel="stylesheet" type="text/css" href="source/css/xeicon.css"/>
 
         <!-- javaScript -->
-        <script src="source/js/jquery-1.11.3.min.js"></script>
+
+        <script src="source/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="source/js/popper.min.js"></script>
+        <script src="source/js/bootstrap.min.js"></script>
+
         <script src="source/js/common.js"></script>
 
     </head>
-
 
     <body class="cmsMain">
         <!-- S:skip_navi -->
@@ -26,77 +29,135 @@
         <!-- E:skip_navi -->
         <!-- S:header -->
         <header id="header">
-                <button class="menu"><i class='xi xi-bars' ></i>메뉴토글</button>
+            <button class="menu">
+                <i class='bar'></i>
+                <i class='bar'></i>
+                <i class='bar'></i>
+                메뉴토글</button>
 
-                <h1><a href="">오픈제주</a></h1>
+            <h1>
+                <a href="">제주은행</a>
+            </h1>
 
-                <p class="welcome"><strong>관리자</strong>님 환영합니다. <u>로그인 시간 - 2018.09.04 20:21:00</u></p>
-                <button class="logout"><i class='xi xi-log-out'></i>LOGOUT</button>
-
+            <p class="welcome">
+                <strong>관리자</strong>님 환영합니다.
+                <u>로그인 세션 유지시간 - 9분 20초 남음</u>
+            </p>
+            <button class="logout">
+                <i class='xi xi-log-out'></i>LOGOUT</button>
 
         </header>
         <!-- E:header -->
         <!-- S:mainContent -->
         <aside>
             <h2>inCMS</h2>
-            <!-- S:main_menu -->
-                <nav id="main-menu">
 
+            <div class="profile mt-5 mb-3">
+                <p class="photo">
+                    <img src="source/images/user.gif">
+                </p>
+                <p class="userName">관리자</p>
+            </div>
+            <!-- S:main_menu -->
+            <nav id="main-menu">
+
+                <ul>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-dashboard-o'></i>
+                                <span>Dashboard</span></a>
+                        </h3>
+
+                    </li>
+                    <li >
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-sitemap'></i>
+                                <span>App</span></a>
+                        </h3>
                         <ul>
                             <li>
-                                <h3><a href="#"><i class='xi xi-dashboard-o'></i><span>Dashboard</span></a></h3>
-
-                            </li>
-                            <li >
-                                <h3><a href="#"><i class='xi xi-sitemap'></i><span>App</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>Widgets</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>Weather</a></li>
-                                </ul>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>Widgets</a>
                             </li>
                             <li>
-                                <h3><a href="#"><i class='xi xi-code'></i><span>Calendar</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>코드그룹관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>코드관리</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="#"><i class='xi xi-list-square'></i><span>Charts</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>메뉴그룹관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>사용자 메뉴관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>관리자 메뉴관리</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="#"><i class='xi xi-comment-o'></i><span>UI Elements</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>게시판관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>게시물관리</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="#"><i class='xi xi-document'></i><span>Forms</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>페이지</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>LAYOUT</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>CSS</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>JS</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <h3><a href="#"><i class='xi xi-library-books-o'></i><span>Tables</span></a></h3>
-                                <ul>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>카테고리그룹관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>카테고리그룹등록</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>카테고리관리</a></li>
-                                    <li><a href=""><i class='xi xi-subdirectory'></i>카테고리등록</a></li>
-                                </ul>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>Weather</a>
                             </li>
                         </ul>
+                    </li>
 
-                </nav>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-comment-o'></i>
+                                <span>UI Elements</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>게시판관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>게시물관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-document'></i>
+                                <span>Forms</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>페이지</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>LAYOUT</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>CSS</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>JS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <a href="#">
+                                <i class='xi xi-library-books-o'></i>
+                                <span>Tables</span></a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리그룹관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리그룹등록</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리관리</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class='xi xi-subdirectory'></i>카테고리등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
             <!-- E:main_menu -->
 
         </aside>
@@ -105,22 +166,58 @@
 
             <section class="view">
 
-                <h2 class="stitle"><i class='xi xi-dashboard-o'></i>대시보드</h2>
+                <h2 class="sTitle">
+                    <i class='xi xi-dashboard-o'></i>대시보드</h2>
 
+                <nav class="navigation" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item icon">
+                            <a href="#">
+                                <i class='xi xi-home-o'></i>Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">APP</li>
+                    </ol>
+                </nav>
                 <div class="contentsArea">
                     <div class="container">
-                        <div class="row ">
-                                <div class="col-xl-8">
-                                    <div class="shadowBox">
-                                        ㅇㄹ민ㅇ럼닝 러;ㅁ니ㅏ얼 ;ㅁ니얼
-                                    </div>
-                                </div>
-                                <div class=" col-xl-4">
-                                        <div class="shadowBox">
-                                            ㅇㄹ민ㅇ럼닝 러;ㅁ니ㅏ얼 ;ㅁ니얼
-                                        </div>
-                                </div>
+
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="alert-heading">고양이 여러분께 알립니다.</h4>
+                            야옹 야옹 야옹 냐아옹 냥냥 야옹 애옹
+
                         </div>
+
+
+                        <div class="row ">
+                            <div class="col-xl-8">
+                                <div class="widget shadowBox">
+                                    <h4 class="widgetTitle">제목입니다.</h4>
+                                    <div class="widgetContent">
+                                        sigkgk
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class=" col-xl-4">
+                                <div class="widget weather shadowBox">
+                                    <h4>
+                                        <strong>제주시</strong>날씨</h4>
+                                    <div class="big">
+                                        <i class="xi xi-snowy"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>

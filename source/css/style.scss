@@ -139,6 +139,25 @@ body {
                     margin-bottom:rem(10px);
                     font-family:sans-serif;
                 }
+                
+                &#inputCode {
+                    display:inline-block;
+                    border-radius:rem(5px 0 0 5px);
+                }
+            }
+
+            div.row {
+                margin:0;
+
+                div.codeImg {
+                    border:none;
+                    background:$gray-400;
+                    border-radius:rem(0 5px 5px 0);
+                }
+
+                .invalid-feedback {
+                    text-align:left;
+                }
             }
         }
     }
@@ -415,7 +434,7 @@ body {
                                 font-weight: 400;
                                 font-size: rem(16px);
                                 color: rgba($white, 0.7);
-                                @include pmz(#{rem(10px 16px)},0);
+                                @include pmz(rem(10px 16px),0);
                                 word-break: keep-all;
                                 white-space: nowrap;
 
@@ -466,7 +485,7 @@ body {
                                     display:block;
                                     font-size:rem(14px);
                                     color:$white - 50%;
-                                    @include pmz(#{rem(8px 16px 8px 36px)},0);
+                                    @include pmz(rem(8px 16px 8px 36px),0);
 
                                     @media only screen and (min-width : $screen-size-pc) {
                                         font-size:14px;
@@ -511,6 +530,21 @@ body {
                 }
             }
 
+
+            p.copyright {
+                display:inline-block;
+                width:100%;
+                @include pmz(rem(0 20px), rem(70px 0 30px));
+                font-size:rem(14px);
+                color:$gray-600;
+                white-space:nowrap;
+                @include opacity(0);
+                text-overflow:hidden;
+
+                @media only screen and (min-width : $screen-size-pc) {
+                    @include opacity(1);
+                }
+            }
         }
 
         div#content {
@@ -799,6 +833,15 @@ body {
                         }
                     }
                 }
+
+
+                p.copyright {
+                    @include opacity(1);
+    
+                    @media only screen and (min-width : $screen-size-pc) {
+                        @include opacity(0);
+                    }
+                }
             }
 
             header {
@@ -882,9 +925,6 @@ body {
                     margin-left:$aside-width-min;
                 }
             }
-
-            footer#footer {
-                }
         }
 
     }

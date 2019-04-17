@@ -1,6 +1,6 @@
 
+@import "rem", "font";
 @import "bootstrap";
-@import "rem", "font", "mixins/mixin";
 
 /* basic */
 $min-width: 320px;
@@ -562,164 +562,186 @@ body {
                 padding:30px;
             }
 
-            h2.sTitle {
-                @include pmz(rem(0 10px), 0);
-                font-size:rem(20px);
-                color:$gray-700;
-                font-weight:800;
+            section.tabs {
+                padding: 0 15px 2rem;
 
                 @media only screen and (min-width : $screen-size-pc) {
-                    font-size:32px;
-                    @include pmz(0, 0 0 20px);
-                }
-    
-
-                i {
-                    position:relative;
-                    top:rem(2px);
-                    margin-right:rem(6px);
-                    color:#bbb;
+                    font-size: 16px;
                 }
             }
 
-            nav.navigation {
+            section.view {
+                position:relative;
 
-                @media only screen and (min-width : $screen-size-pc) {
-                    position:absolute;
-                    right:20px;
-                    top:30px;
-                }
-
-                .icon {
-                    font-size:0;
-                    i {
-                        font-size:rem(16px);
-                        color:$gray-600;
-
-                        @media only screen and (min-width : $screen-size-pc) {
-                            font-size:20px;
-                        }
-                    }
-                }
-            }
-
-            div.contentsArea {
-                min-height:rem(200px);
-
-                h3.bTitle {
+                h2.sTitle {
+                    @include pmz(rem(0 10px), 0);
+                    font-size:rem(20px);
                     color:$gray-700;
                     font-weight:800;
-                    font-size:rem(16px);
-                    border-bottom:1px solid $gray-200;
-                    @include pmz(rem(0 0 10px), rem(0 0 20px));
 
                     @media only screen and (min-width : $screen-size-pc) {
-                        font-size:22px;
-                        @include pmz(0 0 20px, 0 0 20px);
+                        font-size:32px;
+                        @include pmz(0 1.5rem, 0 0 20px);
                     }
-                }
+        
 
-                .shadowBox {
-                    background:$white;
-                    @include drop-shadow(0, 3px, 5px, 2px, 0.05);
-
-                    &:hover {
-                        @include drop-shadow(0, 5px, 10px, 5px, 0.1);
-                    }
-                }
-
-                .widget {
-                    position:relative;
-                    display:inline-block;
-                    width:100%;
-                    border-radius: $border-radius;
-                    overflow:hidden;
-                    
-                    @include pmz(0, rem(0 0 20px));
-
-                    &.paddingWidget {
-                        @include pmz(rem(10px), rem(0 0 20px));
-
-    
-                        @media only screen and (min-width : $screen-size-pc) {
-
-                            @include pmz(20px, rem(0 0 20px));
-                        }
-                    }
-
-                    h4.widgetTitle {
-                        font-size:rem(14px);
-                        @include pmz(rem(10px), 0);
-                        background:rgba($black, 0.05);
-                        border-bottom:1px solid rgba($black, 0.07);
-                        font-weight:600;
-                        @media only screen and (min-width : $screen-size-pc) {
-                            font-size:16px;
-                            @include pmz(14px 10px, 0);
-                        }
-                    }
-
-                    div.widgetContent {
-                        @include pmz(rem(20px), 0);
-                    }
-
-                    &.weather {
+                    i {
                         position:relative;
-                        padding: rem(30px);
-                        background:$main-color;
-                        color:$white;
-
-                        h4 {
-                            font-size: rem(16px);
-
-                            strong {
-                                font-size: rem(20px);
-                                margin-right: rem(6px);
-                            }
-                        }
-
-                        div.big {
-                            position:absolute;
-                            right:rem(30px);
-                            top:rem(20px);
-
-                            i {
-                                font-size:rem(60px);
-                            }
-                        }
-                        
+                        top:rem(2px);
+                        margin-right:rem(6px);
+                        color:#bbb;
                     }
                 }
 
-                .search {
-                    padding:rem(10px);
-                    background:$gray-300;
-                    border:2px solid $gray-400;
-                    border-radius: $border-radius;
-                    margin-bottom:rem(10px);
+                nav.navigation {
 
                     @media only screen and (min-width : $screen-size-pc) {
-                        padding:20px;
+                        position:absolute;
+                        right:20px;
+                        top:8px;
                     }
 
-                    div.form-row {
-                        line-height:calc(1.5em + 0.75rem + 2px);
+                    .icon {
+                        font-size:0;
+                        i {
+                            font-size:rem(16px);
+                            color:$gray-600;
+
+                            @media only screen and (min-width : $screen-size-pc) {
+                                font-size:20px;
+                            }
+                        }
                     }
                 }
 
-                .cbox {
-                    display:inline-block;
-                    width:100%;
-                    margin-bottom:rem(20px);
+                div.contentsArea {
+                    min-height:rem(200px);
 
-                    .inside {
-                        padding:rem(10px);
-                        background:$white;
-                        border-radius: $border-radius;
-                        border:1px solid $gray-300;
+                    h3.bTitle {
+                        color:$gray-700;
+                        font-weight:800;
+                        font-size:rem(16px);
+                        border-bottom:1px solid $gray-200;
+                        @include pmz(rem(0 0 10px), rem(0 0 20px));
 
                         @media only screen and (min-width : $screen-size-pc) {
-                            padding:30px;
+                            font-size:22px;
+                            @include pmz(0 0 20px, 0 0 20px);
+                        }
+                    }
+
+                    .shadowBox {
+                        background:$white;
+                        @include drop-shadow(0, 3px, 5px, 2px, 0.05);
+
+                        &:hover {
+                            @include drop-shadow(0, 5px, 10px, 5px, 0.1);
+                        }
+                    }
+
+                    .widget {
+                        position:relative;
+                        display:inline-block;
+                        width:100%;
+                        border-radius: $border-radius;
+                        overflow:hidden;
+                        
+                        @include pmz(0, rem(0 0 20px));
+
+                        &.paddingWidget {
+                            @include pmz(rem(10px), rem(0 0 20px));
+
+        
+                            @media only screen and (min-width : $screen-size-pc) {
+
+                                @include pmz(20px, rem(0 0 20px));
+                            }
+                        }
+
+                        h4.widgetTitle {
+                            font-size:rem(14px);
+                            @include pmz(rem(10px), 0);
+                            background:rgba($black, 0.05);
+                            border-bottom:1px solid rgba($black, 0.07);
+                            font-weight:600;
+                            @media only screen and (min-width : $screen-size-pc) {
+                                font-size:16px;
+                                @include pmz(14px 10px, 0);
+                            }
+                        }
+
+                        div.widgetContent {
+                            @include pmz(rem(20px), 0);
+                        }
+
+                        &.weather {
+                            position:relative;
+                            padding: rem(30px);
+                            background:$main-color;
+                            color:$white;
+
+                            h4 {
+                                font-size: rem(16px);
+
+                                strong {
+                                    font-size: rem(20px);
+                                    margin-right: rem(6px);
+                                }
+                            }
+                            
+                            p {
+                                @include pmz(0,0);
+                                font-size:rem(32px);
+
+                                strong {
+                                    @include pmz(0, 0 10px 0 0);
+                                    font-size:rem(38px);
+                                }
+                            }
+
+                            div.big {
+                                position:absolute;
+                                right:rem(30px);
+                                top:rem(20px);
+
+                                i {
+                                    font-size:rem(90px);
+                                }
+                            }
+                            
+                        }
+                    }
+
+                    .search {
+                        padding:rem(10px);
+                        background:$gray-300;
+                        border:2px solid $gray-400;
+                        border-radius: $border-radius;
+                        margin-bottom:rem(10px);
+
+                        @media only screen and (min-width : $screen-size-pc) {
+                            padding:20px;
+                        }
+
+                        div.form-row {
+                            line-height:calc(1.5em + 0.75rem + 2px);
+                        }
+                    }
+
+                    .cbox {
+                        display:inline-block;
+                        width:100%;
+                        margin-bottom:rem(20px);
+
+                        .inside {
+                            padding:rem(10px);
+                            background:$white;
+                            border-radius: $border-radius;
+                            border:1px solid $gray-300;
+
+                            @media only screen and (min-width : $screen-size-pc) {
+                                padding:30px;
+                            }
                         }
                     }
                 }
@@ -728,17 +750,6 @@ body {
 
 
 
-
-            footer#footer {
-                text-align: center;
-    
-                @media only screen and (min-width : $screen-size-pc) {
-
-                    text-align: left;
-                    font-size: 14px;
-                }
-    
-            }
 
         }
         

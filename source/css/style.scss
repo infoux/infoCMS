@@ -1,11 +1,13 @@
 
-@import "rem", "font";
-@import "bootstrap";
+@import "rem", "font", "my-mixin";
+@import "bootstrap/bootstrap";
+@import "my-bootstrap";
 
 /* basic */
 $min-width: 320px;
 $img-url: "../images";
 $screen-size-pc: 1200px;
+
 .mCenter {
     margin:0 auto;
 }
@@ -33,7 +35,7 @@ textarea {
         }
     }
 */
-}
+} 
 
 a {
     text-decoration: none;

@@ -1,0 +1,102 @@
+
+// COLOR
+$main-color: $blue - 20%;
+
+// _variables.scss line 78
+$theme-colors2: ()
+!default;
+$theme-colors2: map-merge(("primary": $main-color, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark), $theme-colors2);
+
+// _buttons.scss line 59
+@each $color, $value in $theme-colors2 {
+    .btn-#{$color} {
+        @include button-variant($value, $value);
+    }
+}
+
+// _pagination.scss
+.page-link {
+    background-color: transparent;
+    border: none;
+    color: $gray-800;
+    @include border-radius($border-radius);
+
+    &:hover {
+        color: $main-color;
+        background-color: $gray-300;
+    }
+}
+
+.page-item {
+
+    &:first-child {
+        .page-link {
+            margin-left: 0;
+            @include border-radius($border-radius);
+        }
+    }
+    &:last-child {
+        .page-link {
+            @include border-radius($border-radius);
+        }
+    }
+}
+
+
+
+
+
+//
+// Tabs
+//
+
+.nav-tabs2 {
+    border-bottom: none;
+    background:$gray-500;
+    padding:rem(6px 3px 0);
+    @include border-radius($nav-tabs-border-radius);
+  
+    .nav-item {
+        position:relative;
+        @include pmz(0,0);
+    }
+  
+    .nav-link {
+      border: none;
+      background:$gray-200;
+      @include border-radius($nav-tabs-border-radius);
+
+      margin:rem(0 3px 6px);
+  
+      @include hover-focus {
+        border-color: $nav-tabs-link-hover-border-color;
+      }
+
+      @include ellipse;
+  
+      &.disabled {
+        color: $nav-link-disabled-color;
+        background-color: $gray-400;
+      }
+    }
+
+    .close {
+        font-size:rem(14px);
+        position:absolute;
+        right:rem(7px);
+        top:rem(2px);
+    }
+  
+    .nav-link.active,
+    .nav-item.show .nav-link {
+      color: $gray-100;
+      background-color: $gray-800;
+    }
+
+    .nav-link.active + .close {
+        color:$gray-100;
+        text-shadow:none;
+    }
+  }
+  
+  

@@ -124,14 +124,14 @@ sup {
 }
 
 a {
-  color: #005de1;
+  color: #007bff;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #003977;
-  text-decoration: none;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 a:not([href]):not([tabindex]) {
@@ -215,10 +215,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-input[type="password"] {
-  font-family: sans-serif;
 }
 
 button,

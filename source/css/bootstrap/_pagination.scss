@@ -8,15 +8,11 @@
   position: relative;
   display: block;
   padding: $pagination-padding-y $pagination-padding-x;
-  margin-left: $pagination-border-width;
+  margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
   color: $pagination-color;
   background-color: $pagination-bg;
   border: $pagination-border-width solid $pagination-border-color;
-  font-weight:800;
-
-  @include border-radius($border-radius);
-
 
   &:hover {
     z-index: 2;
@@ -34,6 +30,18 @@
 }
 
 .page-item {
+  &:first-child {
+    .page-link {
+      margin-left: 0;
+      @include border-left-radius($border-radius);
+    }
+  }
+  &:last-child {
+    .page-link {
+      @include border-right-radius($border-radius);
+    }
+  }
+
   &.active .page-link {
     z-index: 1;
     color: $pagination-active-color;

@@ -11041,8 +11041,32 @@ body {
 
 /* style */
 body {
+  /* 404 */
   /* login */
   /* main */
+}
+
+body.error-page {
+  padding: 1.42857rem;
+}
+
+body.error-page h1 {
+  font-weight: bolder;
+  font-size: 7.85714rem;
+  color: #6c757d;
+  font-family: sans-serif;
+}
+
+body.error-page h1 i {
+  display: block;
+  margin: 10vh 0 0;
+  color: #ffc107;
+}
+
+body.error-page h1 small {
+  font-size: 1rem;
+  margin: 0.71429rem 0 2.85714rem;
+  display: block;
 }
 
 body.cmsLogin {

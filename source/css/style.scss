@@ -112,6 +112,29 @@ body {
     //     }
     // }
 
+    /* 404 */
+    &.error-page {
+        padding:rem(20px);
+        h1 {
+            font-weight:bolder;
+            font-size:rem(110px);
+            color:$gray-600;
+            font-family:sans-serif;
+
+            i {
+                display:block;
+                margin:10vh 0 0;
+                color:$yellow;
+            }
+
+            small {
+                font-size:rem(14px);
+                margin:rem(10px 0 40px);
+                display:block;
+            }
+        }
+    }
+
     /* login */
     &.cmsLogin {
         padding:rem(20px);

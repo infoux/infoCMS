@@ -40,6 +40,10 @@ textarea {
 a {
     text-decoration: none;
     color: $gray-900;
+
+    &:hover {
+        text-decoration:none;
+    }
 }
 /*font*/
 html {
@@ -227,8 +231,8 @@ body {
             @media only screen and (min-width : $screen-size-pc) {
                 left: $aside-width;
                 background: $white;
-                height: 60px;
-                line-height: 60px;
+                height: 50px;
+                line-height: 50px;
                 vertical-align: top;
                 padding:0;
             }
@@ -251,10 +255,10 @@ body {
                     position:relative;
                     left:0;
                     top:0;
-                    width: 60px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
                     background: $main-color;
-                    line-height: 60px;
+                    line-height: 50px;
                     border-radius: 0 30px 30px 0;
                 }
 
@@ -399,8 +403,8 @@ body {
 
                 @media only screen and (min-width : $screen-size-pc) {
                     font-size: 22px;
-                    height: 60px;
-                    line-height: 60px;
+                    height: 50px;
+                    line-height: 50px;
                 }
             }
 
@@ -579,19 +583,34 @@ body {
             padding:rem(20px 0 10px);
 
             @media only screen and (min-width : $screen-size-pc) {
-                margin: 60px 0 0 $aside-width;
+                margin: 50px 0 0 $aside-width;
                 display: inline-block;
                 width: calc(100% - #{$aside-width});
                 vertical-align: top;
                 font-size: 14px;
-                padding:30px;
+                padding:30px 10px;
             }
 
             section.tabs {
-                padding: 0 15px 2rem;
+                position:relative;
+                padding: 0;
+                top:rem(-20px);
+                margin:rem(0 0 -10px);
+                background:$gray-500;
 
                 @media only screen and (min-width : $screen-size-pc) {
                     font-size: 16px;
+                    top:-30px;
+                    margin:0 -#{($grid-gutter-width / 2) + 2} -10px;
+                }
+
+                div.btn-set {
+                    position:absolute;
+                    display:inline-block;
+                    right:0;
+                    top:0;
+                    
+                    @include gradienth(rgba($gray-300, 0.2), rgba($gray-300, 0.2), rgba($gray-300, 1));
                 }
             }
 
@@ -605,8 +624,8 @@ body {
                     font-weight:800;
 
                     @media only screen and (min-width : $screen-size-pc) {
-                        font-size:32px;
-                        @include pmz(0 1.5rem, 0 0 20px);
+                        font-size:28px;
+                        @include pmz(0 #{$grid-gutter-width / 2}, 0 0 16px);
                     }
         
 
@@ -622,7 +641,7 @@ body {
 
                     @media only screen and (min-width : $screen-size-pc) {
                         position:absolute;
-                        right:20px;
+                        right:#{$grid-gutter-width / 2};
                         top:8px;
                     }
 
@@ -671,7 +690,7 @@ body {
                         border-radius: $border-radius;
                         overflow:hidden;
                         
-                        @include pmz(0, rem(0 0 20px));
+                        @include pmz(0, rem(0 0 10px));
 
                         &.paddingWidget {
                             @include pmz(rem(10px), rem(0 0 20px));
@@ -745,7 +764,7 @@ body {
                         margin-bottom:rem(10px);
 
                         @media only screen and (min-width : $screen-size-pc) {
-                            padding:20px;
+                            padding:16px;
                         }
 
                         div.form-row {
@@ -765,7 +784,7 @@ body {
                             border:1px solid $gray-300;
 
                             @media only screen and (min-width : $screen-size-pc) {
-                                padding:30px;
+                                padding:20px;
                             }
                         }
                     }

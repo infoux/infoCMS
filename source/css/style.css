@@ -12635,7 +12635,7 @@ body.cmsMain div#content {
 body.cmsMain div#content section.tabs {
   position: relative;
   float: left;
-  width: calc(100% + 18px);
+  width: 100%;
   padding: 0.71429rem 0.35714rem 0 0.71429rem;
   top: 0;
   margin: 0 0 1.42857rem;
@@ -12647,6 +12647,7 @@ body.cmsMain div#content section.tabs {
   body.cmsMain div#content section.tabs {
     top: 0;
     margin: 0 -10px 20px;
+    width: calc(100% + 20px);
     padding: 10px 10px 0;
   }
 }

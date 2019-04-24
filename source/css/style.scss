@@ -598,7 +598,7 @@ body {
             section.tabs {
                 position:relative;
                 float:left;
-                width:calc(100% + #{$grid-gutter-width + 2});
+                width:100%;
                 padding: rem(10px 5px 0 10px);
                 top:0;
                 margin:rem(0 0 20px);
@@ -608,6 +608,7 @@ body {
                 @include media-breakpoint-up(xl) {
                     top:0;
                     margin:0 -#{($grid-gutter-width / 2) + 2} 20px;
+                    width:calc(100% + #{($grid-gutter-width) + 4px});
                     padding:10px 10px 0;
                 }
 

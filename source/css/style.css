@@ -12635,7 +12635,7 @@ body.cmsMain div#content {
 body.cmsMain div#content section.tabs {
   position: relative;
   float: left;
-  width: 100%;
+  width: calc(100% + 18px);
   padding: 0.71429rem 0.35714rem 0 0.71429rem;
   top: 0;
   margin: 0 0 1.42857rem;
@@ -12701,7 +12701,7 @@ body.cmsMain div#content section.tabs div.item button.close {
   font-size: 1rem;
 }
 
-body.cmsMain div#content section.tabs div.item.slick-current a {
+body.cmsMain div#content section.tabs div.item.on a {
   background: #fff;
 }
 
@@ -12740,8 +12740,8 @@ body.cmsMain div#content section.tabs div.btn-set {
   top: 0;
   bottom: 0;
   text-align: right;
-  background-color: rgba(173, 181, 189, 0);
-  background: -webkit-linear-gradient(left, rgba(173, 181, 189, 0), #495057, #495057);
+  background-color: rgba(206, 212, 218, 0);
+  background: -webkit-linear-gradient(left, rgba(206, 212, 218, 0), #ced4da, #ced4da);
 }
 
 body.cmsMain div#content section.tabs div.btn-set button {
@@ -12762,6 +12762,16 @@ body.cmsMain div#content section.tabs div.btn-set button {
 
 body.cmsMain div#content section.tabs div.btn-set button i {
   font-size: 0.85714rem;
+}
+
+body.cmsMain div#content section.tabs div.btn-set button.slick-disabled {
+  background: #adb5bd;
+  color: #ced4da;
+}
+
+body.cmsMain div#content section.tabs div.btn-set button.slick-hidden {
+  background: #adb5bd;
+  color: #ced4da;
 }
 
 body.cmsMain div#content section.view {

@@ -598,7 +598,7 @@ body {
             section.tabs {
                 position:relative;
                 float:left;
-                width:100%;
+                width:calc(100% + #{$grid-gutter-width + 2});
                 padding: rem(10px 5px 0 10px);
                 top:0;
                 margin:rem(0 0 20px);
@@ -659,7 +659,7 @@ body {
                         }
                     }
 
-                    &.slick-current {
+                    &.on {
                         a {
                             background:$white;
                         }
@@ -703,7 +703,7 @@ body {
                         bottom:0;
                         text-align:right;
                     
-                        @include gradienth(rgba($gray-500, 0), $gray-700, $gray-700);
+                        @include gradienth(rgba($gray-400, 0), $gray-400, $gray-400);
 
 
                     button {
@@ -722,6 +722,16 @@ body {
 
                         i {
                             font-size:rem(12px);
+                        }
+
+                        &.slick-disabled {
+                            background:$gray-500;
+                            color:$gray-400;
+                        }
+
+                        &.slick-hidden {
+                            background:$gray-500;
+                            color:$gray-400;
                         }
                     }
                 }

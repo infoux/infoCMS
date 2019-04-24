@@ -33,7 +33,7 @@ $(document).ready(function () {
         autoplay: false,
         prevArrow:".slick-left",
         nextArrow:".slick-right",
-        infinite: true,
+        infinite: false,
         focusOnSelect: true,
 
         responsive: [
@@ -49,7 +49,16 @@ $(document).ready(function () {
         ]
     });
 
+    $('.slick-tabs .item a').on("click", function(){
+        $('.slick-tabs .item').removeClass("on");
+        $(this).parent().addClass("on");
+    });
 
+
+
+
+
+    
     $("nav#main-menu h3").each(function () {
         if ($(this).parent().find("ul").length) {
             $(this)

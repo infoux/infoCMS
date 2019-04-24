@@ -2,6 +2,7 @@
 @import "rem", "font", "my-mixin";
 @import "bootstrap/bootstrap";
 @import "my-bootstrap";
+@import "jquery.scrolling-tabs.css";
 
 /* basic */
 $min-width: 320px;
@@ -196,7 +197,6 @@ body {
     &.cmsMain {
         $aside-width: 240px;
         $aside-width-min: 80px;
-        background:$gray-200;
 
             &::before {
                 content:"";
@@ -580,7 +580,7 @@ body {
             position:relative;
             margin-top: rem(50px);
             font-size:rem(11px);
-            padding:rem(20px 0 10px);
+            padding:rem(0 0 10px);
 
             @media only screen and (min-width : $screen-size-pc) {
                 margin: 50px 0 0 $aside-width;
@@ -588,29 +588,111 @@ body {
                 width: calc(100% - #{$aside-width});
                 vertical-align: top;
                 font-size: 14px;
-                padding:30px 10px;
+                padding:0 10px 30px;
             }
 
             section.tabs {
                 position:relative;
-                padding: 0;
-                top:rem(-20px);
-                margin:rem(0 0 -10px);
-                background:$gray-500;
+                padding: rem(10px 5px 0 10px);
+                top:0;
+                margin:rem(0 0 20px);
+                background:$gray-300;
+                font-size:0;
 
-                @media only screen and (min-width : $screen-size-pc) {
-                    font-size: 16px;
-                    top:-30px;
-                    margin:0 -#{($grid-gutter-width / 2) + 2} -10px;
+                @include media-breakpoint-up(xl) {
+                    top:0;
+                    margin:0 -#{($grid-gutter-width / 2) + 2} 20px;
+                    padding:10px 10px 0;
+                }
+
+                div.slick-tabs {
+                    overflow:hidden;
+
+                    div.item {
+                        position:relative;
+                        display:inline-block;
+                        width:calc((100% - #{rem(20px)}) / 4);
+                        margin:rem(0 5px 0 0);
+
+                        @include media-breakpoint-up(xl) {
+                            width:auto;
+                            margin:0 5px 0 0;
+                        }
+
+                        a {
+                            display:block;
+                            border-radius:rem(5px 5px 0 0);
+                            background:$gray-400;
+                            line-height:rem(38px);
+                            font-size:rem(12px);
+                            padding:rem(0 10px);
+                            @include ellipse;
+                            outline:none;
+
+                            @include media-breakpoint-up(xl) {
+                                font-size: 16px;
+                                border-radius:5px 5px 0 0;
+
+                            }
+
+                            &:hover {
+                                color:$black;
+                            }
+                        }
+
+                        button.close {
+                            position:absolute;
+                            right:rem(5px);
+                            top:rem(3px);
+                            font-size:rem(14px);
+
+                            i {
+
+                            }
+                        }
+
+                        &.slick-current {
+                            a {
+                                background:$white;
+                            }
+                        }
+        
+                        
+                    }
                 }
 
                 div.btn-set {
-                    position:absolute;
-                    display:inline-block;
-                    right:0;
-                    top:0;
+                        font-size:0;
+                        text-align:center;
+                        position:absolute;
+                        z-index:1300;
+                        display:inline-block;
+                        right:0;
+                        top:0;
+                        bottom:0;
+                        text-align:right;
                     
-                    @include gradienth(rgba($gray-300, 0.2), rgba($gray-300, 0.2), rgba($gray-300, 1));
+                        @include gradienth(rgba($gray-500, 0), $gray-700, $gray-700);
+
+
+                    button {
+                        margin:rem(8px 0 16px 2px);
+                        border:none;
+                        background:$gray-900;
+                        color:$gray-100;
+                        padding:rem(10px 6px);
+                        border-radius:$border-radius;
+
+                        @include media-breakpoint-up(xl) {
+                            margin:10px 0 16px 2px;
+                            padding:10px 6px;
+                        }
+    
+
+                        i {
+                            font-size:rem(12px);
+                        }
+                    }
                 }
             }
 
@@ -643,6 +725,10 @@ body {
                         position:absolute;
                         right:#{$grid-gutter-width / 2};
                         top:8px;
+                    }
+
+                    .breadcrumb {
+                        background-color:$white !important;
                     }
 
                     .icon {
@@ -689,6 +775,7 @@ body {
                         width:100%;
                         border-radius: $border-radius;
                         overflow:hidden;
+                        border:1px solid $gray-300;
                         
                         @include pmz(0, rem(0 0 10px));
 
@@ -931,7 +1018,7 @@ body {
                             transform: rotate(45deg);
 
                             @media only screen and (min-width : $screen-size-pc) {
-                                top:41%;
+                                top:40%;
                             }
                         }
     
@@ -944,7 +1031,7 @@ body {
                             transform: rotate(-45deg);
 
                             @media only screen and (min-width : $screen-size-pc) {
-                                top:54%;
+                                top:55%;
                             }
                         }
                     }

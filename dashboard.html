@@ -4,9 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>infoCMS</title>
-        
+
         <link rel="stylesheet" type="text/css" href="source/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="source/css/xeicon.css"/>
 
@@ -15,6 +17,7 @@
         <script src="source/js/jquery-3.3.1.slim.min.js"></script>
         <script src="source/js/popper.min.js"></script>
         <script src="source/js/bootstrap.min.js"></script>
+        <script src="source/js/slick.min.js"></script>
 
         <script src="source/js/common.js"></script>
 
@@ -170,112 +173,215 @@
 
         <div id="content">
 
-            <section class="view">
+            <!-- tabs -->
+            <section class="tabs">
 
-                <h2 class="sTitle">
-                    <i class='xi xi-dashboard-o'></i>대시보드</h2>
+                <div class="btn-set col-3 col-xl-1">
+                    <button class="slick-left">
+                        <i class='xi xi-angle-left-min'></i>이전</button>
+                    <button class="slick-right">
+                        <i class='xi xi-angle-right-min'></i>다음</button>
+                </div>
 
-                <nav class="navigation" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item icon">
-                            <a href="#">
-                                <i class='xi xi-home-o'></i>Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Dashboard</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">APP</li>
-                    </ol>
-                </nav>
-                <div class="contentsArea">
-                    <div class="container-fluid">
+                <div class="slick-tabs">
+                    <div class="item on">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="item">
+                        <a href="#">대시보드</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
 
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                </div>
+        </section>
+        <!--// tabs --->
+        <section class="view">
 
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            <h4 class="alert-heading">긴급 알림 입니다.</h4>
-                            가나다라마바사아자차카타파하
+            <h2 class="sTitle">
+                <i class='xi xi-dashboard-o'></i>대시보드</h2>
 
+            <nav class="navigation" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item icon">
+                        <a href="#">
+                            <i class='xi xi-home-o'></i>Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">APP</li>
+                </ol>
+            </nav>
+            <div class="contentsArea">
+                <div class="container-fluid">
+
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="alert-heading">긴급 알림 입니다.</h4>
+                        가나다라마바사아자차카타파하
+
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-xl-8">
+                            <div class="widget shadowBox">
+                                <h4 class="widgetTitle">제목입니다.</h4>
+                                <div class="widgetContent">
+                                    sigkgk
+                                </div>
+
+                            </div>
                         </div>
-
-
-                        <div class="row ">
-                            <div class="col-xl-8">
-                                <div class="widget shadowBox">
-                                    <h4 class="widgetTitle">제목입니다.</h4>
-                                    <div class="widgetContent">
-                                        sigkgk
-                                    </div>
-
+                        <div class=" col-xl-4">
+                            <div class="widget weather shadowBox">
+                                <h4>
+                                    <strong>제주시</strong>날씨</h4>
+                                <p>
+                                    <strong>23℃</strong>눈</p>
+                                <div class="big">
+                                    <i class="xi xi-snowy"></i>
                                 </div>
-                            </div>
-                            <div class=" col-xl-4">
-                                <div class="widget weather shadowBox">
-                                    <h4><strong>제주시</strong>날씨</h4>
-                                    <p><strong>23℃</strong>눈</p>
-                                        <div class="big">
-                                            <i class="xi xi-snowy"></i>
-                                        </div>
 
-                                </div>
                             </div>
                         </div>
+                    </div>
 
-
-                        <div class="row ">
-                            <div class="col-xl-8">
-                                <div class="widget shadowBox">
-                                    <h4 class="widgetTitle">제목입니다.</h4>
-                                    <div class="widgetContent">
-                                        sigkgk
-                                    </div>
-
+                    <div class="row ">
+                        <div class="col-xl-8">
+                            <div class="widget shadowBox">
+                                <h4 class="widgetTitle">제목입니다.</h4>
+                                <div class="widgetContent">
+                                    sigkgk
                                 </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="widget shadowBox">
-                                    <h4 class="widgetTitle">제목입니다.</h4>
-                                    <div class="widgetContent">
-                                        sigkgk
-                                    </div>
 
-                                </div>
                             </div>
                         </div>
-
-
-                        <div class="row ">
-                            <div class="col-xl-6">
-                                <div class="widget shadowBox">
-                                    <h4 class="widgetTitle">제목입니다.</h4>
-                                    <div class="widgetContent">
-                                        sigkgk
-                                    </div>
-
+                        <div class="col-xl-4">
+                            <div class="widget shadowBox">
+                                <h4 class="widgetTitle">제목입니다.</h4>
+                                <div class="widgetContent">
+                                    sigkgk
                                 </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="widget shadowBox">
-                                    <h4 class="widgetTitle">제목입니다.</h4>
-                                    <div class="widgetContent">
-                                        sigkgk
-                                    </div>
 
-                                </div>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="row ">
+                        <div class="col-xl-6">
+                            <div class="widget shadowBox">
+                                <h4 class="widgetTitle">제목입니다.</h4>
+                                <div class="widgetContent">
+                                    sigkgk
+                                </div>
 
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="widget shadowBox">
+                                <h4 class="widgetTitle">제목입니다.</h4>
+                                <div class="widgetContent">
+                                    sigkgk
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
-            </section>
+            </div>
 
-        </div>
-        <!-- E:mainContent -->
-    </body>
+        </section>
+
+    </div>
+    <!-- E:mainContent -->
+</body>
 
 </html>

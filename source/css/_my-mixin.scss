@@ -84,9 +84,9 @@
 @mixin gradienth($startColor:#eee, $ingColor: #eee, $endColor: white) {
     background-color: $startColor;
     background: -webkit-linear-gradient(left, $startColor, $ingColor, $endColor);
-    background: -moz-linear-gradient(left, $startColor, $ingColor, $endColor);
-    background: -ms-linear-gradient(left, $startColor, $ingColor, $endColor);
-    background: -o-linear-gradient(left, $startColor, $ingColor, $endColor);
+    // background: -moz-linear-gradient(left, $startColor, $ingColor, $endColor);
+    // background: -ms-linear-gradient(left, $startColor, $ingColor, $endColor);
+    // background: -o-linear-gradient(left, $startColor, $ingColor, $endColor);
 }
 
 @mixin ani($time:0.2s) {

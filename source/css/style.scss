@@ -198,6 +198,10 @@ body {
         $aside-width: 240px;
         $aside-width-min: 80px;
 
+        &.dashboard {
+            background:$gray-200;
+        }
+
             &::before {
                 content:"";
                 position:fixed;
@@ -593,10 +597,12 @@ body {
 
             section.tabs {
                 position:relative;
+                float:left;
+                width:100%;
                 padding: rem(10px 5px 0 10px);
                 top:0;
                 margin:rem(0 0 20px);
-                background:$gray-300;
+                background:$gray-400;
                 font-size:0;
 
                 @include media-breakpoint-up(xl) {
@@ -607,57 +613,82 @@ body {
 
                 div.slick-tabs {
                     overflow:hidden;
+                    padding:0;
+                    display:inline-block;
+                    float:right;
+                }
 
-                    div.item {
-                        position:relative;
-                        display:inline-block;
-                        width:calc((100% - #{rem(20px)}) / 4);
-                        margin:rem(0 5px 0 0);
+                div.item {
+                    position:relative;
+                    display:inline-block;
+                    margin:rem(0 6px 0 0);
+
+                    @include media-breakpoint-up(xl) {
+                        margin:0 5px 0 0;
+                    }
+
+                    a {
+                        display:block;
+                        border-radius:rem(5px 5px 0 0);
+                        background:$gray-500;
+                        line-height:rem(38px);
+                        font-size:rem(12px);
+                        padding:rem(0 10px);
+                        @include ellipse;
+                        outline:none;
 
                         @include media-breakpoint-up(xl) {
-                            width:auto;
-                            margin:0 5px 0 0;
+                            font-size: 16px;
+                            border-radius:5px 5px 0 0;
+
                         }
+
+                        &:hover {
+                            color:$black;
+                        }
+                    }
+
+                    button.close {
+                        position:absolute;
+                        right:rem(5px);
+                        top:rem(3px);
+                        font-size:rem(14px);
+
+                        i {
+
+                        }
+                    }
+
+                    &.slick-current {
+                        a {
+                            background:$white;
+                        }
+                    }
+    
+                    
+                }
+
+                div.fix-tabs {
+                    float:left;
+                    display:inline-block;
+                    padding:rem(0 5px 0 0);
+                    margin:0;
+
+                    @include media-breakpoint-up(xl) {
+                        padding:0 5px 0 0;
+                    }
+
 
                         a {
-                            display:block;
-                            border-radius:rem(5px 5px 0 0);
-                            background:$gray-400;
-                            line-height:rem(38px);
-                            font-size:rem(12px);
-                            padding:rem(0 10px);
-                            @include ellipse;
-                            outline:none;
-
-                            @include media-breakpoint-up(xl) {
-                                font-size: 16px;
-                                border-radius:5px 5px 0 0;
-
-                            }
-
-                            &:hover {
-                                color:$black;
-                            }
-                        }
-
-                        button.close {
-                            position:absolute;
-                            right:rem(5px);
-                            top:rem(3px);
-                            font-size:rem(14px);
-
+                            font-size:0;
+                            text-align:center;
+                            background:$gray-200;
+    
                             i {
-
+                                position:relative;
+                                font-size:rem(20px);
+                                top:rem(10px);
                             }
-                        }
-
-                        &.slick-current {
-                            a {
-                                background:$white;
-                            }
-                        }
-        
-                        
                     }
                 }
 
@@ -698,6 +729,7 @@ body {
 
             section.view {
                 position:relative;
+                clear:both;
 
                 h2.sTitle {
                     @include pmz(rem(0 10px), 0);
@@ -728,7 +760,7 @@ body {
                     }
 
                     .breadcrumb {
-                        background-color:$white !important;
+                        background-color:transparent !important;
                     }
 
                     .icon {

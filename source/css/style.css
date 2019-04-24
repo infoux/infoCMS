@@ -12190,6 +12190,10 @@ body.cmsLogin form.form-signin div.row .invalid-feedback {
   text-align: left;
 }
 
+body.cmsMain.dashboard {
+  background: #e9ecef;
+}
+
 body.cmsMain::before {
   content: "";
   position: fixed;
@@ -12630,10 +12634,12 @@ body.cmsMain div#content {
 
 body.cmsMain div#content section.tabs {
   position: relative;
+  float: left;
+  width: 100%;
   padding: 0.71429rem 0.35714rem 0 0.71429rem;
   top: 0;
   margin: 0 0 1.42857rem;
-  background: #dee2e6;
+  background: #ced4da;
   font-size: 0;
 }
 
@@ -12647,26 +12653,27 @@ body.cmsMain div#content section.tabs {
 
 body.cmsMain div#content section.tabs div.slick-tabs {
   overflow: hidden;
+  padding: 0;
+  display: inline-block;
+  float: right;
 }
 
-body.cmsMain div#content section.tabs div.slick-tabs div.item {
+body.cmsMain div#content section.tabs div.item {
   position: relative;
   display: inline-block;
-  width: calc((100% - 1.42857rem) / 4);
-  margin: 0 0.35714rem 0 0;
+  margin: 0 0.42857rem 0 0;
 }
 
 @media (min-width: 1200px) {
-  body.cmsMain div#content section.tabs div.slick-tabs div.item {
-    width: auto;
+  body.cmsMain div#content section.tabs div.item {
     margin: 0 5px 0 0;
   }
 }
 
-body.cmsMain div#content section.tabs div.slick-tabs div.item a {
+body.cmsMain div#content section.tabs div.item a {
   display: block;
   border-radius: 0.35714rem 0.35714rem 0 0;
-  background: #ced4da;
+  background: #adb5bd;
   line-height: 2.71429rem;
   font-size: 0.85714rem;
   padding: 0 0.71429rem;
@@ -12677,25 +12684,50 @@ body.cmsMain div#content section.tabs div.slick-tabs div.item a {
 }
 
 @media (min-width: 1200px) {
-  body.cmsMain div#content section.tabs div.slick-tabs div.item a {
+  body.cmsMain div#content section.tabs div.item a {
     font-size: 16px;
     border-radius: 5px 5px 0 0;
   }
 }
 
-body.cmsMain div#content section.tabs div.slick-tabs div.item a:hover {
+body.cmsMain div#content section.tabs div.item a:hover {
   color: #000;
 }
 
-body.cmsMain div#content section.tabs div.slick-tabs div.item button.close {
+body.cmsMain div#content section.tabs div.item button.close {
   position: absolute;
   right: 0.35714rem;
   top: 0.21429rem;
   font-size: 1rem;
 }
 
-body.cmsMain div#content section.tabs div.slick-tabs div.item.slick-current a {
+body.cmsMain div#content section.tabs div.item.slick-current a {
   background: #fff;
+}
+
+body.cmsMain div#content section.tabs div.fix-tabs {
+  float: left;
+  display: inline-block;
+  padding: 0 0.35714rem 0 0;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body.cmsMain div#content section.tabs div.fix-tabs {
+    padding: 0 5px 0 0;
+  }
+}
+
+body.cmsMain div#content section.tabs div.fix-tabs a {
+  font-size: 0;
+  text-align: center;
+  background: #e9ecef;
+}
+
+body.cmsMain div#content section.tabs div.fix-tabs a i {
+  position: relative;
+  font-size: 1.42857rem;
+  top: 0.71429rem;
 }
 
 body.cmsMain div#content section.tabs div.btn-set {
@@ -12734,6 +12766,7 @@ body.cmsMain div#content section.tabs div.btn-set button i {
 
 body.cmsMain div#content section.view {
   position: relative;
+  clear: both;
 }
 
 body.cmsMain div#content section.view h2.sTitle {
@@ -12768,7 +12801,7 @@ body.cmsMain div#content section.view h2.sTitle i {
 }
 
 body.cmsMain div#content section.view nav.navigation .breadcrumb {
-  background-color: #fff !important;
+  background-color: transparent !important;
 }
 
 body.cmsMain div#content section.view nav.navigation .icon {

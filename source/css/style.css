@@ -12152,26 +12152,26 @@ body.cmsLogin form.form-signin img {
   height: 5.5rem;
 }
 
-body.cmsLogin form.form-signin input[type=text],
-body.cmsLogin form.form-signin input[type=password] {
+body.cmsLogin form.form-signin input[type=password],
+body.cmsLogin form.form-signin input[type=text] {
   height: 3.57143rem;
 }
 
-body.cmsLogin form.form-signin input[type=text]#inputID,
-body.cmsLogin form.form-signin input[type=password]#inputID {
+body.cmsLogin form.form-signin input[type=password]#inputID,
+body.cmsLogin form.form-signin input[type=text]#inputID {
   border-bottom: none;
   border-radius: 0.35714rem 0.35714rem 0 0;
 }
 
-body.cmsLogin form.form-signin input[type=text]#inputPassword,
-body.cmsLogin form.form-signin input[type=password]#inputPassword {
+body.cmsLogin form.form-signin input[type=password]#inputPassword,
+body.cmsLogin form.form-signin input[type=text]#inputPassword {
   border-radius: 0 0 0.35714rem 0.35714rem;
   margin-bottom: 0.71429rem;
   font-family: sans-serif;
 }
 
-body.cmsLogin form.form-signin input[type=text]#inputCode,
-body.cmsLogin form.form-signin input[type=password]#inputCode {
+body.cmsLogin form.form-signin input[type=password]#inputCode,
+body.cmsLogin form.form-signin input[type=text]#inputCode {
   display: inline-block;
   border-radius: 0.35714rem 0 0 0.35714rem;
 }
@@ -12208,7 +12208,7 @@ body.cmsMain::before {
   transition: all 0.2s ease;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain::before {
     width: 240px;
   }
@@ -12226,7 +12226,7 @@ body.cmsMain header {
   background: #149331;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header {
     left: 240px;
     background: #fff;
@@ -12252,7 +12252,7 @@ body.cmsMain header button.menu {
   line-height: 1;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.menu {
     position: relative;
     left: 0;
@@ -12278,7 +12278,7 @@ body.cmsMain header button.menu i.bar {
   transition: all 0.8s ease;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.menu i.bar {
     width: 20%;
     left: 50%;
@@ -12292,7 +12292,7 @@ body.cmsMain header button.menu i.bar:first-of-type {
   top: 35%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.menu i.bar:first-of-type {
     top: 41%;
     -webkit-transform: rotate(-45deg);
@@ -12304,7 +12304,7 @@ body.cmsMain header button.menu i.bar:nth-of-type(2) {
   top: 50%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.menu i.bar:nth-of-type(2) {
     -webkit-opacity: 0;
     -moz-opacity: 0;
@@ -12316,7 +12316,7 @@ body.cmsMain header button.menu i.bar:last-of-type {
   top: 65%;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.menu i.bar:last-of-type {
     top: 54%;
     -webkit-transform: rotate(45deg);
@@ -12332,7 +12332,7 @@ body.cmsMain header h1 {
   line-height: inherit;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header h1 {
     font-size: 22px;
     font-weight: 800;
@@ -12345,7 +12345,7 @@ body.cmsMain header h1 a {
   color: #fff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header h1 a {
     color: #212529;
   }
@@ -12355,7 +12355,7 @@ body.cmsMain header p.welcome {
   display: none;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header p.welcome {
     display: inline-block;
     font-size: 14px;
@@ -12382,7 +12382,7 @@ body.cmsMain header button.logout {
   outline: none !important;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.logout {
     background: #f8f9fa;
     color: #212529;
@@ -12396,7 +12396,7 @@ body.cmsMain header button.logout i {
   margin-right: 6px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain header button.logout i {
     top: 1px;
   }
@@ -12404,7 +12404,7 @@ body.cmsMain header button.logout i {
 
 body.cmsMain aside {
   position: absolute;
-  z-index: 990;
+  z-index: 1500;
   background: #212529;
   left: 0;
   top: 0;
@@ -12413,7 +12413,7 @@ body.cmsMain aside {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside {
     display: inline-block;
     width: 240px;
@@ -12431,7 +12431,7 @@ body.cmsMain aside h2 {
   background: #149331;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside h2 {
     font-size: 22px;
     height: 50px;
@@ -12446,7 +12446,7 @@ body.cmsMain aside div.profile {
   opacity: 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside div.profile {
     -webkit-opacity: 1;
     -moz-opacity: 1;
@@ -12474,13 +12474,13 @@ body.cmsMain aside div.profile P.userName {
   font-size: 0.85714rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside div.profile P.userName {
     font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside nav#main-menu {
     display: inline-block;
     width: 100%;
@@ -12509,7 +12509,7 @@ body.cmsMain aside nav#main-menu > ul > li h3 a {
   white-space: nowrap;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside nav#main-menu > ul > li h3 a {
     font-size: 18px;
     margin: 0;
@@ -12525,7 +12525,7 @@ body.cmsMain aside nav#main-menu > ul > li h3 a i {
   margin: 0 8px 0 0;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside nav#main-menu > ul > li h3 a i {
     color: #aaa;
   }
@@ -12562,7 +12562,7 @@ body.cmsMain aside nav#main-menu > ul > li ul li a {
   padding: 0.57143rem 1.14286rem 0.57143rem 2.57143rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside nav#main-menu > ul > li ul li a {
     font-size: 14px;
     padding: 10px 20px 10px 40px;
@@ -12584,7 +12584,7 @@ body.cmsMain aside nav#main-menu > ul > li.active ul {
   transition: all 1s ease;
 }
 
-body.cmsMain aside nav#main-menu > ul > li.active ul li a:hover, body.cmsMain aside nav#main-menu > ul > li.active ul li a.active {
+body.cmsMain aside nav#main-menu > ul > li.active ul li a.active, body.cmsMain aside nav#main-menu > ul > li.active ul li a:hover {
   background: #343a40;
 }
 
@@ -12606,7 +12606,7 @@ body.cmsMain aside p.copyright {
   text-overflow: hidden;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain aside p.copyright {
     -webkit-opacity: 1;
     -moz-opacity: 1;
@@ -12621,7 +12621,7 @@ body.cmsMain div#content {
   padding: 0 0 0.71429rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content {
     margin: 50px 0 0 240px;
     display: inline-block;
@@ -12788,7 +12788,7 @@ body.cmsMain div#content section.view h2.sTitle {
   font-weight: 800;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view h2.sTitle {
     font-size: 28px;
     margin: 0 0 16px;
@@ -12803,7 +12803,7 @@ body.cmsMain div#content section.view h2.sTitle i {
   color: #bbb;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view nav.navigation {
     position: absolute;
     right: 8px;
@@ -12824,7 +12824,7 @@ body.cmsMain div#content section.view nav.navigation .icon i {
   color: #6c757d;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view nav.navigation .icon i {
     font-size: 20px;
   }
@@ -12843,7 +12843,7 @@ body.cmsMain div#content section.view div.contentsArea h3.bTitle {
   padding: 0 0 0.71429rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view div.contentsArea h3.bTitle {
     font-size: 22px;
     margin: 0 0 20px;
@@ -12878,7 +12878,7 @@ body.cmsMain div#content section.view div.contentsArea .widget.paddingWidget {
   padding: 0.71429rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view div.contentsArea .widget.paddingWidget {
     margin: 0 0 1.42857rem;
     padding: 20px;
@@ -12894,7 +12894,7 @@ body.cmsMain div#content section.view div.contentsArea .widget h4.widgetTitle {
   font-weight: 600;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view div.contentsArea .widget h4.widgetTitle {
     font-size: 16px;
     margin: 0;
@@ -12953,7 +12953,7 @@ body.cmsMain div#content section.view div.contentsArea .search {
   margin-bottom: 0.71429rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view div.contentsArea .search {
     padding: 16px;
   }
@@ -12976,7 +12976,7 @@ body.cmsMain div#content section.view div.contentsArea .cbox .inside {
   border: 1px solid #dee2e6;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain div#content section.view div.contentsArea .cbox .inside {
     padding: 20px;
   }
@@ -12989,21 +12989,21 @@ body.cmsMain.menuToggle::before {
   width: calc(100vw - 60px);
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle::before {
     width: 80px;
   }
 }
 
 body.cmsMain.menuToggle aside {
-  z-index: 990;
+  z-index: 1500;
   display: block;
   background: #343a40;
   overflow: hidden;
   width: calc(100vw - 60px);
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside {
     width: 80px;
   }
@@ -13024,14 +13024,14 @@ body.cmsMain.menuToggle aside div.profile p.photo {
   height: 7.85714rem;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside div.profile p.photo {
     width: 50px;
     height: 50px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside div.profile P.userName {
     -webkit-opacity: 0;
     -moz-opacity: 0;
@@ -13043,13 +13043,13 @@ body.cmsMain.menuToggle aside nav#main-menu > ul > li h3 a i {
   color: #fff;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside nav#main-menu > ul > li h3 a i {
     margin: 0 0 0 8px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside nav#main-menu > ul > li h3 a span {
     -webkit-opacity: 0;
     -moz-opacity: 0;
@@ -13061,7 +13061,7 @@ body.cmsMain.menuToggle aside nav#main-menu > ul > li h3 a:hover {
   background: #007f1d;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside nav#main-menu > ul > li ul {
     height: 0;
     padding: 0;
@@ -13074,7 +13074,7 @@ body.cmsMain.menuToggle aside p.copyright {
   opacity: 1;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle aside p.copyright {
     -webkit-opacity: 0;
     -moz-opacity: 0;
@@ -13087,7 +13087,7 @@ body.cmsMain.menuToggle header {
   background: #149331;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle header {
     left: 80px;
   }
@@ -13102,7 +13102,7 @@ body.cmsMain.menuToggle header button.menu {
   width: 60px;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle header button.menu {
     position: relative;
     background: #007f1d;
@@ -13117,7 +13117,7 @@ body.cmsMain.menuToggle header button.menu i.bar:first-of-type {
           transform: rotate(45deg);
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle header button.menu i.bar:first-of-type {
     top: 40%;
   }
@@ -13135,7 +13135,7 @@ body.cmsMain.menuToggle header button.menu i.bar:last-of-type {
           transform: rotate(-45deg);
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle header button.menu i.bar:last-of-type {
     top: 55%;
   }
@@ -13153,14 +13153,14 @@ body.cmsMain.menuToggle header p.welcome u {
   color: #20c997;
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle header button.logout {
     color: #fff;
     background: #117d2a;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   body.cmsMain.menuToggle div#content {
     width: calc(100% - 80px);
     margin-left: 80px;
